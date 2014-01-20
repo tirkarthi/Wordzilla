@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#eff2f4"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/board"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/Edit"
+        android:background="#7fb1e7"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_weight="0.20"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="pause"
+            android:textAlignment="viewEnd"
+            android:textColor="#000000"
+            android:textSize="@dimen/String" />
+
+        <TextView
+            android:id="@+id/life"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_gravity="right"
+            android:layout_weight="0.20"
+            android:background="@drawable/button"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="@dimen/String" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_gravity="center"
+            android:layout_weight="0.20"
+            android:gravity="right|center_vertical"
+            android:textColor="#000000"
+            android:textSize="@dimen/String" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp" >
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_weight="0.10"
+            android:background="#ffffff"
+            android:textSize="18sp"
+            android:inputType="textVisiblePassword" />
+
+        <ImageButton
+            android:id="@+id/Go"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_weight="0.70"
+            android:background="@drawable/button"
+            android:onClick="enter"
+            android:src="@drawable/ic_launcher"
+            android:text="@string/Go"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meaning"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wordzilla"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/wordzilla_meaning"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:lineSpacingMultiplier="1.5"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

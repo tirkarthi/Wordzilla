@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f4"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/input_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/input_dict"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_weight="0.10"
+            android:background="#ffffff"
+            android:inputType="textVisiblePassword" />
+
+        <ImageButton
+            android:id="@+id/Go"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/Edit"
+            android:layout_weight="0.70"
+            android:background="@drawable/button"
+            android:onClick="enter"
+            android:src="@drawable/ic_launcher"
+            android:text="@string/Go"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="2dp" >
+
+        <TextView
+            android:autoLink="email"
+            android:id="@+id/wordzilla_meaning_dict"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dp"
+            android:lineSpacingMultiplier="1.5"
+            android:scrollbars="vertical"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

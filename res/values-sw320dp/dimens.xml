@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Edit">40dp</dimen>
+    <string name="String">20sp</string>
+    
+</resources>

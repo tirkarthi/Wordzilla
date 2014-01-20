@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Yennaachi.Wordzilla"
+    android:installLocation="preferExternal"
+    android:versionCode="5"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:uiOptions="splitActionBarWhenNarrow" >
+        
+        <activity
+            android:name="com.Yennaachi.Wordzilla.MainActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.Intro"
+            android:label="@string/title_activity_intro"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.Report"
+            android:label="@string/title_activity_report"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.Help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro"/>
+              </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.About"
+            android:label="@string/title_activity_rateus"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.Contribute"
+            android:label="@string/title_activity_contribute"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.Dictionary"
+            android:label="@string/title_activity_dictionary"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.Yennaachi.Wordzilla.License"
+            android:label="@string/title_activity_license"
+            android:parentActivityName="com.Yennaachi.Wordzilla.Intro"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.Yennaachi.Wordzilla.Intro" />
+        </activity>
+        <activity
+            android:name="com.swarmconnect.SwarmActivity">
+        </activity>
+         <activity
+            android:name="com.swarmconnect.SwarmMainActivity">
+        </activity>
+    </application>
+
+</manifest>

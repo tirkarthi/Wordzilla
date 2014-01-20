@@ -1,0 +1,54 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Wordzilla="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_share"
+        Wordzilla:showAsAction="always"
+        android:icon="@drawable/social_share"
+        android:orderInCategory="100"
+        android:title="Share"/>
+    <item
+        android:id="@+id/action_clear"
+        Wordzilla:showAsAction="always"
+        android:icon="@drawable/abc_ic_clear"
+        android:orderInCategory="100"
+        android:title="Clear input"/>
+    <item
+        android:id="@+id/action_more"
+        Wordzilla:showAsAction="always"
+        android:icon="@drawable/abc_ic_menu_moreoverflow_normal_holo_dark"
+        android:orderInCategory="100"
+        android:title="More">
+        <menu>
+            <item
+                android:id="@+id/action_rating"
+                Wordzilla:showAsAction="ifRoom"
+                android:icon="@drawable/rating_good"
+                android:orderInCategory="100"
+                android:title="Rate"/>
+             <item
+                android:id="@+id/action_fork"
+                Wordzilla:showAsAction="ifRoom"
+                android:icon="@drawable/git"
+                android:orderInCategory="100"
+                android:title="Fork"/>
+            <item
+                android:id="@+id/action_reset"
+                Wordzilla:showAsAction="ifRoom"
+                android:icon="@drawable/abc_ic_clear"
+                android:orderInCategory="100"
+                android:title="Reset"/>
+            <item
+                android:id="@+id/action_score"
+                Wordzilla:showAsAction="ifRoom"
+                android:orderInCategory="100"
+                android:title="Scoreboard"/>
+            <item
+                android:id="@+id/action_score_submit"
+                Wordzilla:showAsAction="ifRoom"
+                android:icon="@drawable/git"
+                android:orderInCategory="100"
+                android:title="Submit score"/>
+        </menu>
+    </item>
+</menu>

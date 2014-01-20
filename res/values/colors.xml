@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name = "blue_base">#449def</color>
+    <color name= "blue_stroke">#2F6699</color>
+    <color name = "blue_gradient_start">#00a2e2</color>
+    <color name = "blue_gradient_end">#0767a4</color>
+</resources>

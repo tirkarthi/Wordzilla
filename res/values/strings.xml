@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">wordzilla</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Go">Go</string>
+    <string name="Reset">Reset</string>
+    <string name="clear">Clear</string>
+    <string name="pause">Pause</string>
+    <string name="title_activity_intro">Wordzilla</string>
+    <string name="New_Game">New Game</string>
+    <string name="Report">Contribute a word</string>
+    <string name="About">About Us</string>
+    <string name="Help">Help</string>
+    <string name="Wordzilla">Wordzilla</string>
+    <string name="Back">Back to menu</string>
+    <string name="title_activity_report">Report</string>
+    <string name="title_activity_help">Help</string>
+    <string name="Read_more">Read more</string>
+    <string name="title_activity_rateus">Rateus</string>
+    <string name="disclaimer">How many words do you know if you had never been in a fight ? - Tyler Burden</string>
+    <string name="title_activity_license">License</string>
+    <string name="title_activity_contribute">Contribute</string>
+    <string name="title_activity_dictionary">Dictionary</string>
+
+</resources>

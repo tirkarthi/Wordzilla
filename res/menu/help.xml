@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Wordzilla="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/social_share"
+        android:orderInCategory="100"
+        android:title="Share"
+        Wordzilla:showAsAction="always"/>
+    <item
+        android:id="@+id/action_rating"
+        android:icon="@drawable/rating_good"
+        android:orderInCategory="100"
+        android:title="Rate"
+        Wordzilla:showAsAction="always"/>
+    <item
+        android:id="@+id/action_fork"
+        android:icon="@drawable/git"
+        android:orderInCategory="100"
+        android:title="Fork"
+        Wordzilla:showAsAction="always"/>
+
+</menu>

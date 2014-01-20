@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/galaxy_wiki_antennae"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/newgame"
+        style="@style/button_style"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/blue_menu_btn"
+        android:onClick="newgame"
+        android:text="New Game"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/Dictionary"
+        style="@style/button_style"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/blue_menu_btn"
+        android:onClick="dictionary"
+        android:text="Dictionary"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/help"
+        style="@style/button_style"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/blue_menu_btn"
+        android:onClick="help"
+        android:text="Help"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/word"
+        style="@style/button_style"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/blue_menu_btn"
+        android:onClick="words"
+        android:text="Contribute a word"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/aboutus"
+        style="@style/button_style"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/blue_menu_btn"
+        android:onClick="aboutus"
+        android:text="About us"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/disclaimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dip"
+            android:text="@string/disclaimer"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Wordzilla="http://schemas.android.com/apk/res-auto" >
+
+     <item
+        android:id="@+id/action_rating"
+        android:icon="@drawable/rating_good"
+        android:orderInCategory="100"
+        Wordzilla:showAsAction="always"
+        android:title="Rate"/>
+    <item
+        android:id="@+id/action_clear_dict"
+        android:icon="@drawable/abc_ic_clear"
+        android:orderInCategory="100"
+        Wordzilla:showAsAction="always"
+        android:title="Clear"/>
+    <item
+        android:id="@+id/action_share_dict"
+        android:icon="@drawable/social_share"
+        android:orderInCategory="100"
+        Wordzilla:showAsAction="always"
+        android:title="Share"/>
+
+</menu>
